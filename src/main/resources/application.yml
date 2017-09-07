@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/tfm
+    username: tfm
+    password: tfm
+    driverClassName: com.mysql.jdbc.Driver
+      
+  jmx:
+    enabled: false
+    
+  jpa:
+    properties:
+      hibernate.default_schema: tfm
+      hibernate.default_catalog: tfm
+      hibernate.ddl-auto: validate
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      
+    generate-ddl: true
